@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PT. Garam Tugu Luhur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="assets/images/logo_tugu_luhur.png" alt="logo_Tugu_Luhur" height="50"></a>
+              <h1></h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacts</a>
+                  </li>             
+                </ul>   
+                <a href="login.html">               
+                <button class="btn btn-success" type="">Login/Register</button> 
+                </a>                
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <section class="p-5">      
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img src="assets/images/salt_product1.webp" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Garam Lokal Halus Premium</h5>
+                <p class="card-text"><small class="text-body-secondary"></small> Rp. 2.400/kg</p>
+                <p class="card-text">Garam lokal langsung dari petani yang digiling dan dikeringkan sendiri dengan mesin canggih rotary untuk langsung dikemas dengan merk anda.</p>               
+                <p class="card-text"><strong>Dikirim dengan truk dengan minimal pengiriman 10 ton (10.000kg)</strong></p>               
+                <p class="card-text"><strong>Diskon Rp. 50/kg bila pembelian 30 ton keatas</strong></p>
+                <form class="" onsubmit="return false;">
+                  <div class="mb-3">
+                    <label class="form-label">Quantity (Ton)</label>
+                    <input type="number" id="quantity0" style="width: 100px;" min="10" class="form-control">
+                  </div>                  
+                  <button type="submit" class="btn btn-primary" onclick="buyItem(0)">Buy</button>
+                </form> 
+                <p id="price0" style="margin-top: 20px;"></p>
+                             
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img src="assets/images/salt_product2.jpg" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title"> Garam Millenium SM</h5>
+                <p class="card-text"><small class="text-body-secondary"></small>Rp. 80.000/ball</p>
+                <p class="card-text">Garam kemasan siap saji dan dijual di toko anda</p>               
+                <p class="card-text"><strong>Diskon Rp. 5000/ball bila pembelian 80 ball keatas</strong></p>
+                <form class="" onsubmit="return false;">
+                  <div class="mb-3">
+                    <label class="form-label">Quantity (Ball)</label>
+                    <input type="number" id="quantity1" style="width: 100px;" min="1" class="form-control">
+                  </div>                  
+                  <button type="submit" class="btn btn-primary" onclick="buyItem(1)">Buy</button>
+                </form> 
+                <p id="price1" style="margin-top: 20px;"></p>               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img src="assets/images/salt_product3.jpg" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Garam Krosok Kasar</h5>
+                <p class="card-text"><small class="text-body-secondary"></small> Rp. 1.800/kg</p>
+                <p class="card-text">Garam krosok kasar untuk kolam renang, ternak, pengawet dan lain-lain.</p>               
+                <p class="card-text"><strong>Diskon Rp. 200/kg bila pembelian 500kg keatas</strong></p>
+                <form class="" onsubmit="return false;">
+                  <div class="mb-3">
+                    <label class="form-label">Quantity (Kg)</label>
+                    <input type="number" id="quantity2" style="width: 100px;" min="1" class="form-control">
+                  </div>                  
+                  <button type="submit" class="btn btn-primary" onclick="buyItem(2)">Buy</button>
+                </form> 
+                <p id="price2" style="margin-top: 20px;"></p>         
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="totalBox" class="card mb-3" style="display: none;">
+          <div class="row g-0" >            
+            <div class="col-md-10" >
+              <div class="card-body">
+                <h5 id="grandTotal"class="card-title"></h5>        
+                <button type="submit" class="btn btn-success">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg bg-primary fixed-bottom">
+            <div class="row" style="width: 100%; padding-top: 0%; ">
+                <div class="container-fluid text-center">
+                    <a class="navbar-brand" href="#" style="color: white;">@ 2024 Yugo Alexander</a>                    
+                </div>
+            </div>
+        </nav>
+    </footer>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

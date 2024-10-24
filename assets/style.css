@@ -1,0 +1,34 @@
+.nav-item a{
+    color: white;
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    margin: 0 !important;  
+}
+
+.img-item {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain;
+}
+
+.img-list{
+    padding: 0;
+}
+
+.ins_text {    
+    position: relative;    
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
